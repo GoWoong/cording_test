@@ -4,14 +4,14 @@ def solution(lottos, win_nums):
     zeroCount = 0
     match = 0
     for i in lottos:
-      if i == 0:
-        zeroCount += 1
-      if i in win_nums:
-        match += 1
+        if i == 0:
+            zeroCount += 1
+        if i in win_nums:
+            match += 1
     
     else:
-      answer[0] = result[zeroCount+ match]
-      answer[1] = result[match]
+        answer[0] = result[zeroCount+ match]
+        answer[1] = result[match]
 
     return answer
 
