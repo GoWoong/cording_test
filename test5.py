@@ -1,12 +1,13 @@
 def solution(board, moves):
-    for a in range(0, len(moves)):
+    answer = []
+    for a in moves:
         for i in range(0,5):
-            if board[i][moves[0]] != 0:
-                print(board[i][moves[a-1]])
+            if board[i][a-1] != 0:
+                print(board[i][a-1])
+                board[i][a-1] = 0
                 break
 
     
-    answer = []
     return answer
 
 
