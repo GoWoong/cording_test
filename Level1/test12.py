@@ -12,7 +12,6 @@ def solution(left, right):
             answer -= i
     return answer
 
-
 left1 = 13
 left2 = 24
 right1 = 17

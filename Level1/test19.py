@@ -1,16 +1,6 @@
-from math import sqrt, pow
 def solution(n):
-    sq = 0
-    first, second = divmod(n,n-1)
-    sq = int(sqrt(n-1))
-    
-    if second == 1:
-        if int(pow(sq,2)) == first:
-            answer = sq
-            print(sq)
-        else:
-            answer = n-1
-    return answer
-
+    for i in range(1,n):
+        if n%i==1:
+            return i
 n1 = 10
 print(solution(n1))
